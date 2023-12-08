@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна</title>
+    <link rel="stylesheet" href="./styles/LD.css">
+    <link rel="stylesheet" href="./styles/TB.css">
+    <link rel="stylesheet" href="./styles/MB.css">
+    <script src="js/jquery.js"></script> 
+    <script src="js/scripts.js"></script>
+    <link rel="icon" href="images/icons8-солнце-48.png">
+</head>
+
+<body>
+    <div class="body">
+        <!-- Блок HEADER -->
+        <header class="header">
+            <p class="dreamShare" onclick="toggleMenu()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24"
+                    height="24" viewBox="0,0,256,256" style="fill:#000000;">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none"
+                        font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                        <g transform="scale(10.66667,10.66667)">
+                            <path
+                                d="M6,3v2h4v-2zM14,3v2h4v-2zM6.5,7c-0.81706,0 -1.5,0.68294 -1.5,1.5v1.5c-1.09306,0 -2,0.90694 -2,2v7.5c0,0.81706 0.68294,1.5 1.5,1.5h5c0.81706,0 1.5,-0.68294 1.5,-1.5v-3.5h2v3.5c0,0.81706 0.68294,1.5 1.5,1.5h5c0.81706,0 1.5,-0.68294 1.5,-1.5v-7.5c0,-1.09306 -0.90694,-2 -2,-2v-1.5c0,-0.81706 -0.68294,-1.5 -1.5,-1.5h-3c-0.81706,0 -1.5,0.68294 -1.5,1.5v1.5h-2v-1.5c0,-0.81706 -0.68294,-1.5 -1.5,-1.5zM7,9h2v10h-4v-7h2zM15,9h2v3h2v7h-4zM11,12h2v2h-2z">
+                            </path>
+                        </g>
+                    </g>
+                </svg> відпочивайко</p>
+            <section class="menu">
+                <ol class="menu-items">
+                    <li class="menu-item"><a href="index.html"><h6>Головна</h6></a></li>
+                    <li class="menu-item"><a href="./map.html"><h6>Наше Місцезнаходження</h6></a></li>
+                    <li class="menu-item"><a href="./about.html"><h6>Про нас</h6></a></li>
+                </ol>
+            </section>
+            <img class="header-img" src="./images/Group 13.png" alt="">
+            <!-- Кнопка "Увійти" -->
+    <div>
+        <button class="logIn" id="LogIn">
+            Увійти
+        </button>
+    </div>
+
+    <!-- Кнопка "Зареєструватися" -->
+    <div>
+        <button class="signUp" id="signUp">
+            Зареєструватися
+        </button>
+    </div>
+
+
+            <p class="header__text1">
+                Відпочинь
+            </p>
+            <p class="header__text2">
+                Зроби свій відпочинок незабутнім
+            </p>
+            <a>
+                <button class="findPartner" onclick="scrollToTarget()">
+                    Знайди свій вид відпочинку
+                </button>
+            </a>
+        </header>
+
+        <!-- блок MAIN -->
+        <main class="main">
+            <section class="dreamWork-container">
+                <header class="DW-header">
+                    Як ми здійснюємо ваші мрії?
+                </header>
+                <section class="DW-img">
+                    <p class="DW-img__text2">
+                            Надаєти свої бажання на відпочинок, якщо ви ще не визначились, ми вам допоможемо.
+                    </p>
+                    <p class="DW-img__text1">
+                        Вибір виду відпочинку
+                    </p>
+                    <div class="DW-img__button">
+                        КРОК 1
+                    </div>
+                </section>
+                <section class="DW-img">
+                    <p class="DW-img__text2">
+                        Протягом тижня ми знаходимо для вас найпривабливіші пропозиції.
+                    </p>
+                    <p class="DW-img__text1 t1-2">
+                        Організація подорожі
+                    </p>
+                    <div class="DW-img__button b-2">
+                        КРОК 2
+                    </div>
+                </section>
+                <section class="DW-img">
+                    <p class="DW-img__text2">
+                        Ви на відпочинку з цілодобовим зв'язком з нами та нашими представниками у місці вашого відпочинку.
+                    </p>
+                    <p class="DW-img__text1">
+                        Відпочинок
+                    </p>
+                    <div class="DW-img__button">
+                        КРОК 3
+                    </div>
+                </section>
+            </section>
+
+            <section class="ideas-container" >
+                <header class="ideas-container__header" >
+                    Досліджуй світ з нами 
+                </header>
+                <div class="ideas-container__img" id="galery">Спорт та активність</div>
+                <div class="ideas-container__img">Хороше самопочуття <br>та здоров'я</div>
+                <div class="ideas-container__img"> Екстримальний спорт<br> та експедиції</div>
+                <div class="ideas-container__img">Ігри</div>
+                <div class="ideas-container__img">Культура та освіта</div>
+                <div class="ideas-container__img">Насолода та розслабленість</div>
+                <div class="ideas-container__img">Подорожі</div>
+            </section>
+
+            <section class="search-container">
+                <header class="search-container__header">
+                    Створи свій відпочинок
+                </header>
+                <p class="search-container__text">
+                    Здійсни мрію
+                </p>
+
+            </section>
+        </main>
+        <!-- блок FOOTER -->
+        <footer class="footer">
+            <header class="footer__header">
+                відпочивайко
+            </header>
+            <div class="footer__about">
+                <p class="footer__about_header">Компанія</p>
+                <a class="footer__about_item" href="./about.html">Про нас</a>
+                <a class="footer__about_item" href="./about.html">Контакти</a>
+                <a class="footer__about_item" href="./about.html">Допомога</a>
+            </div>
+            <div class="footer__partners">
+                <p>Партнери</p>
+                <a class="footer__about_item" href="https://lpnu.ua/" target="_blank"><br>Національний університет <br> "Львівська політехніка"</a>
+            </div>
+
+            <div class="footer__designBy">
+                <p>Автор</p>
+                <h4>nazar.pyrtko.pp.2022@lpnu.ua</h4>
+            </div>
+        </footer>
+    </div>
+    <button id="scrollToTopBtn">&#9650;</button>
+    
+           
+            
+    <!-- Модальне вікно для входу -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeLoginBtn">&times;</span>
+            <h2>Увійти</h2>
+            <form>
+                <label for="loginUsername">Логін:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+
+                <label for="loginPassword">Пароль:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+
+                <button class="submit">Увійти</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальне вікно для реєстрації -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegisterBtn">&times;</span>
+            <h2>Зареєструватися</h2>
+            <form>
+                <label for="registerUsername">Логін:</label>
+                <input type="text" id="registerUsername" name="registerUsername" required>
+
+                <label for="registerPassword">Пароль:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+
+                <label for="confirmRegisterPassword">Підтвердіть пароль:</label>
+                <input type="password" id="confirmRegisterPassword" name="confirmRegisterPassword" required>
+
+                <button class="submit">Зареєструватися</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
