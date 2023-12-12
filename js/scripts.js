@@ -8,7 +8,7 @@ function scrollToTarget() {
 function goMain() {
     window.location.href = './index.html';
     
-    window.close();
+    // window.close();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
